@@ -1,0 +1,20 @@
+name: astrbot_plugin_Bettergemini
+desc: Flow2API 全能视觉插件 - 结合大模型原生 Tool 机制的智能绘图与视频生成插件，支持高度自定义与自然语言聊天式生成。
+help: |
+  🤖 【AI 智能体直接调用】
+  无需死记指令，直接带图或者直接发话：
+  • "画一个高颜值的亚洲赛博朋克女孩" 
+  • [发图] "帮我把这张图变成水彩画，好看点~" 
+  • "让这张照片里的人跳个舞，要竖屏的视频哦" 
+
+  🎨 【硬指令】
+  • gg文 <描述> 
+  • gg图 <描述> [带图] 
+  • gg片 [描述] [带图] 
+  • gg动 <描述> 
+
+  ⚙️ 【系统设置】
+  • gg模型列表 | gg切换模型 | gg设置面板
+version: v1.0.1
+author: XIAOKU2300
+repo: https://github.com/XIAOKU2300/astrbot_plugin_Bettergemini

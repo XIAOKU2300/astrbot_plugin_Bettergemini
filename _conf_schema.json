@@ -1,0 +1,51 @@
+{
+    "api_url": {
+        "description": "Flow2API 接口地址",
+        "type": "string",
+        "default": "http://127.0.0.1:8000/v1/chat/completions",
+        "hint": "Flow2API 的 OpenAI 兼容接口地址 (默认本地 8000 端口)"
+    },
+    "apikey": {
+        "description": "API 密钥 (API Key)",
+        "type": "string",
+        "hint": "Flow2API 设定的鉴权密钥",
+        "default": "",
+        "obvious_hint": true
+    },
+    "model": {
+        "description": "默认生成模型",
+        "type": "string",
+        "default": "imagen-4.0-generate-preview-landscape",
+        "hint": "选择默认调用的绘图大模型 (用于图片生成，视频会自动切换对应引擎)",
+        "options": [
+            "gemini-2.5-flash-image-landscape",
+            "gemini-2.5-flash-image-portrait",
+            "gemini-3.0-pro-image-landscape",
+            "gemini-3.0-pro-image-portrait",
+            "imagen-4.0-generate-preview-landscape",
+            "imagen-4.0-generate-preview-portrait"
+        ]
+    },
+    "custom_model": {
+        "description": "自定义模型ID（可选）",
+        "type": "string",
+        "default": "",
+        "hint": "如果有私有的模型 ID，可在此填写。填写后会自动加入可用模型列表中。"
+    },
+    "aesthetic_tags": {
+        "description": "默认审美提示词(AI接管时自动附加)",
+        "type": "string",
+        "default": "masterpiece, best quality, Asian aesthetic, delicate and beautiful facial features, clear and soft lighting, highly detailed, cinematic",
+        "hint": "为了保证输出的画风更符合您的要求，当AI智能体自主绘图时，会自动在底层为您的提示词叠加这些亚洲高级审美英文Tag。"
+    },
+    "prompt_list": {
+        "description": "快捷提示词(咒语)列表",
+        "type": "list",
+        "default": [
+            "手办化:将图片转换为精美的高质量树脂手办风格，3D渲染（C4D/Blender），光线柔和，细节精致，放置在展示盒中",
+            "赛博朋克:转换为赛博朋克风格，霓虹灯光交错（粉蓝紫配色），充满未来科技感，高对比度，夜晚繁华城市背景",
+            "二次元:转换为宫崎骏动漫风格，吉卜力工作室色彩，色彩清新，线条细腻，治愈系，蓝天白云绿草地"
+        ],
+        "hint": "格式：快捷指令:完整详细提示词。在群里发送配置的快捷单词可直接触发。"
+    }
+}
